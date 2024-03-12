@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7; /* Updated background color */
             color: #333;
         }
         header {
@@ -39,6 +39,19 @@
         }
         .project {
             margin-bottom: 20px;
+        }
+        .project-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card-content {
+            padding: 20px;
         }
         .project h3 {
             margin-bottom: 5px;
@@ -70,41 +83,53 @@
 
         <h2>Projects</h2>
         <div class="project">
-            <h3>Facial Emotion Recognition System For School Counsellor</h3>
-            <p>
-                The "Facial Emotion Recognition System for School Counsellor" is a web 
-                application that utilizes advanced technology to analyze facial expressions 
-                of students in real-time. By capturing images through a webcam or uploaded 
-                photos, the system employs Python, Flask, TensorFlow, and Convolutional Neural 
-                Networks (CNN) to detect and recognize various emotions such as happiness, sadness, 
-                anger, fear, and surprise. The user interface, developed using HTML, CSS, and Bootstrap, 
-                provides an intuitive platform for school counsellors to interact with the system and gain 
-                insights into the emotional well-being of students. This project aims to equip counsellors 
-                with valuable tools to support students' emotional needs and foster a positive school environment.</p>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Facial Emotion Recognition System For School Counsellor</h3>
+                    <p>
+                        The "Facial Emotion Recognition System for School Counsellor" is a web 
+                        application that utilizes advanced technology to analyze facial expressions 
+                        of students in real-time. By capturing images through a webcam or uploaded 
+                        photos, the system employs Python, Flask, TensorFlow, and Convolutional Neural 
+                        Networks (CNN) to detect and recognize various emotions such as happiness, sadness, 
+                        anger, fear, and surprise. The user interface, developed using HTML, CSS, and Bootstrap, 
+                        provides an intuitive platform for school counsellors to interact with the system and gain 
+                        insights into the emotional well-being of students. This project aims to equip counsellors 
+                        with valuable tools to support students' emotional needs and foster a positive school environment.</p>
+                </div>
+            </div>
         </div>
         <div class="project">
-            <h3>Car Service Booking System</h3>
-            <p>The "Car Service Booking System" is a mobile application designed to streamline the 
-                process of booking car services for users. Developed using Java and Prestige in Android 
-                Studio, this application offers a user-friendly interface for customers to easily schedule 
-                appointments for car maintenance, repairs, or other services. With intuitive features and 
-                functionalities, users can select their preferred service, choose a convenient date and time, 
-                and even specify any additional requirements. By leveraging the power of mobile technology, 
-                this app aims to enhance the customer experience by providing a convenient and efficient 
-                way to manage car servicing needs on the go.</p>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Car Service Booking System</h3>
+                    <p>The "Car Service Booking System" is a mobile application designed to streamline the 
+                        process of booking car services for users. Developed using Java and Prestige in Android 
+                        Studio, this application offers a user-friendly interface for customers to easily schedule 
+                        appointments for car maintenance, repairs, or other services. With intuitive features and 
+                        functionalities, users can select their preferred service, choose a convenient date and time, 
+                        and even specify any additional requirements. By leveraging the power of mobile technology, 
+                        this app aims to enhance the customer experience by providing a convenient and efficient 
+                        way to manage car servicing needs on the go.</p>
+                </div>
+            </div>
         </div>
         <div class="project">
-            <h3>Car Service Booking Website</h3>
-            <p>
-                The "Car Service Booking Website" is a web application designed to simplify the process 
-                of scheduling car services online. Developed using HTML, CSS, Bootstrap, JavaScript, PHP, 
-                and SQL, this platform offers users an intuitive interface to book appointments for car 
-                maintenance, repairs, or other services. With responsive design and interactive features, 
-                customers can easily navigate the website, select their desired service, choose a suitable 
-                date and time, and provide any necessary details. The backend functionality, powered by PHP 
-                and SQL, ensures seamless booking management and data storage. By providing a user-friendly 
-                and efficient booking experience, this website aims to enhance customer satisfaction and 
-                streamline the car service booking process.</p>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Car Service Booking Website</h3>
+                    <p>
+                        The "Car Service Booking Website" is a web application designed to simplify the process 
+                        of scheduling car services online. Developed using HTML, CSS, Bootstrap, JavaScript, PHP, 
+                        and SQL, this platform offers users an intuitive interface to book appointments for car 
+                        maintenance, repairs, or other services. With responsive design and interactive features, 
+                        customers can easily navigate the website, select their desired service, choose a suitable 
+                        date and time, and provide any necessary details. The backend functionality, powered by PHP 
+                        and SQL, ensures seamless booking management and data storage. By providing a user-friendly 
+                        and efficient booking experience, this website aims to enhance customer satisfaction and 
+                        streamline the car service booking process.</p>
+                </div>
+            </div>
         </div>
         <!-- Add more projects as needed -->
 
