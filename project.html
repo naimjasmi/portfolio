@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/project.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <title>Mohamad Naim Bin Jasmi - Portfolio</title>
+</head>
+<body>
+
+    <header style="background-color: #007bff; color: #fff; padding: 20px; text-align: left;">
+        <h1 style="margin: 0 0 10px; font-size: 32px;">Portfolio</h1>
+        <div style="display: flex; align-items: center;">
+            <div>
+                <p style="margin: 0; font-size: 18px;">Mohamad Naim Bin Jasmi</p>
+                <p style="margin: 5px 0 0; font-size: 16px;">Age: 23 | Majoring in Computer Science</p>
+            </div>
+        </div>
+    </header>
+    
+    <button id="toggleSidebarBtn" class="btn btn-primary">
+        <i class="fas fa-bars"></i> <!-- Font Awesome bars icon -->
+    </button> 
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 bg-light sidebar">
+                <div class="sidebar-content">
+                    <h2>Menu</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artwork</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+    <div class="container">
+        
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Facial Emotion Recognition System For School Counsellor</h3>
+                    <p>
+                        The "Facial Emotion Recognition System for School Counsellor" is a web 
+                        application that utilizes advanced technology to analyze facial expressions 
+                        of students in real-time. By capturing images through a webcam or uploaded 
+                        photos, the system employs Python, Flask, TensorFlow, and Convolutional Neural 
+                        Networks (CNN) to detect and recognize various emotions such as happiness, sadness, 
+                        anger, fear, and surprise. The user interface, developed using HTML, CSS, and Bootstrap, 
+                        provides an intuitive platform for school counsellors to interact with the system and gain 
+                        insights into the emotional well-being of students. This project aims to equip counsellors 
+                        with valuable tools to support students' emotional needs and foster a positive school environment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Car Service Booking System</h3>
+                    <p>The "Car Service Booking System" is a mobile application designed to streamline the 
+                        process of booking car services for users. Developed using Java and Prestige in Android 
+                        Studio, this application offers a user-friendly interface for customers to easily schedule 
+                        appointments for car maintenance, repairs, or other services. With intuitive features and 
+                        functionalities, users can select their preferred service, choose a convenient date and time, 
+                        and even specify any additional requirements. By leveraging the power of mobile technology, 
+                        this app aims to enhance the customer experience by providing a convenient and efficient 
+                        way to manage car servicing needs on the go.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Car Service Booking Website</h3>
+                    <p>
+                        The "Car Service Booking Website" is a web application designed to simplify the process 
+                        of scheduling car services online. Developed using HTML, CSS, Bootstrap, JavaScript, PHP, 
+                        and SQL, this platform offers users an intuitive interface to book appointments for car 
+                        maintenance, repairs, or other services. With responsive design and interactive features, 
+                        customers can easily navigate the website, select their desired service, choose a suitable 
+                        date and time, and provide any necessary details. The backend functionality, powered by PHP 
+                        and SQL, ensures seamless booking management and data storage. By providing a user-friendly 
+                        and efficient booking experience, this website aims to enhance customer satisfaction and 
+                        streamline the car service booking process.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more projects -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#toggleSidebarBtn").click(function(){
+                    $(".sidebar").toggle();
+                });
+            });
+        </script>
+</body>
+</html>
