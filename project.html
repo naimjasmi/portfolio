@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Font Awesome -->
-    <title>Naim - Portfolio</title>
+    <title>Project Naim</title>
 </head>
+
 <body>
     <header style="background-color: #007bff; color: #fff; padding: 20px; text-align: left;">
         <button id="toggleSidebarBtn" class="btn btn-primary">
@@ -63,7 +65,8 @@
                                     counsellors
                                     with valuable tools to support students' emotional needs and foster a positive
                                     school environment.</p>
-                                    <button class="btn btn-primary">Learn More</button> <!-- Button added -->
+                                <button class="btn btn-primary" id="learnMoreBtn1">Learn More</button>
+                                <!-- Button added -->
                             </div>
                         </div>
                     </div>
@@ -88,7 +91,8 @@
                                     this app aims to enhance the customer experience by providing a convenient and
                                     efficient
                                     way to manage car servicing needs on the go.</p>
-                                    <button class="btn btn-primary">Learn More</button> <!-- Button added -->
+                                <button class="btn btn-primary" id="learnMoreBtn2">Learn More</button>
+                                <!-- Button added -->
                             </div>
                         </div>
                     </div>
@@ -96,21 +100,26 @@
                 <div class="project">
                     <div class="project-card">
                         <div class="project-card-content">
-                            <img style="border-radius: 50px 10px 10px 10px;" src="image/pro1.jpg" alt="Project Image">
+                            <img style="border-radius: 10px 50px 50px 10px;" src="image/pro1.jpg" alt="Project Image">
                             <div class="project-info">
                                 <h3>Car Service Booking Website</h3>
                                 <p>The "Car Service Booking Website" is a web application designed to simplify the
-                                    process of scheduling car services online. Developed using HTML, CSS, Bootstrap, JavaScript,
-                                    PHP, and SQL, this platform offers users an intuitive interface to book appointments for
+                                    process of scheduling car services online. Developed using HTML, CSS, Bootstrap,
+                                    JavaScript,
+                                    PHP, and SQL, this platform offers users an intuitive interface to book appointments
+                                    for
                                     car maintenance, repairs, or other services. With responsive design and interactive
-                                    features, customers can easily navigate the website, select their desired service, choose a
-                                    suitable date and time, and provide any necessary details. The backend functionality, powered
+                                    features, customers can easily navigate the website, select their desired service,
+                                    choose a
+                                    suitable date and time, and provide any necessary details. The backend
+                                    functionality, powered
                                     by PHP and SQL, ensures seamless booking management and data storage. By providing a
                                     user-friendly
                                     and efficient booking experience, this website aims to enhance customer satisfaction
                                     and
                                     streamline the car service booking process.</p>
-                                    <button class="btn btn-primary">Learn More</button> <!-- Button added -->
+                                <button class="btn btn-primary" id="learnMoreBtn3">Learn More</button>
+                                <!-- Button added -->
                             </div>
                         </div>
                     </div>
@@ -118,6 +127,14 @@
 
                 <!-- Add more projects -->
             </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="close">&times;</button>
+            <p>This is a pop-up!</p>
         </div>
     </div>
 
@@ -133,7 +150,42 @@
             $("#toggleSidebarBtn").click(function () {
                 $(".sidebar").toggle();
             });
+
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn1 = document.getElementById("learnMoreBtn1");
+            var btn2 = document.getElementById("learnMoreBtn2");
+            var btn3 = document.getElementById("learnMoreBtn3");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn1.onclick = function () {
+                modal.style.display = "block";
+            }
+            btn2.onclick = function () {
+                modal.style.display = "block";
+            }
+            btn3.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         });
     </script>
 </body>
+
 </html>
