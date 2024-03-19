@@ -7,7 +7,21 @@
     <title>Artwork Naim</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/artwork.css" />
+    <!-- Include Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        /* Custom CSS for the slider */
+        .slider {
+            width: 80%; /* Adjust the width of the slider */
+            margin: 0 auto;
+        }
 
+        .slider img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,10 +29,11 @@
     <div class="flexy flexy--center">
         <div class="flexy__items flexy__items--cyan">
             <h2 class="content__title content__title--center">
-                <div id="rfx1" class="content__title__inner">It's wierd not to be weird</div><br />
+                <div id="rfx1" class="content__title__inner">It's weird not to be weird</div><br />
                 <div id="rfx2" class="content__title__inner content__title__inner--offset-1">- John Lennon
                 </div>
             </h2>
+            <br>
             <div class="triggers">
                 <a href="index.html"><button class="btn btn--trigger">Home</button></a>
                 <a href="project.html"><button class="btn btn--trigger">Project</button></a>
@@ -27,25 +42,40 @@
                 <a href="#"><button class="btn btn--trigger">Contact</button></a>
             </div>
         </div>
-        <div class="flexy__items flexy__items--magenta">
-                <div class="dual">
-                        <div class="dual__inner" id="rfx3">
-                            <div class="dual__half">
-                                <img style="border-radius: 10px 10px 10px 10px; width: 500px;" src="image/pro1.jpg" alt="Project Image">
-                            </div>
-                        </div>
-                        <div class="dual__content">
-                           <span class="author">― Anonymous</span>
-                        </div> 
-                    </div>
-            </div>
+
+        <div class="slider" style="max-width: 500px;">
+            <div class="slide"><img src="image/pro1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="image/pro1.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="image/pro1.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="image/pro1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="image/pro1.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="image/pro1.jpg" alt="Image 3"></div>
+            
+            <!-- Add more images as needed -->
+        </div>
+
         <div class="flexy__items flexy__items--yellow">
             <h2 class="content__title content__title--center">
-                <div id="rfx4" class="content__title__inner">Be yourself,because everyone else is taken </div><br />
+                <div id="rfx4" class="content__title__inner">Be yourself, because everyone else is taken </div><br />
                 <br>
             </h2>
         </div>
     </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true, // Display dots navigation
+                infinite: true, // Enable infinite loop
+                autoplay: true, // Enable autoplay
+                autoplaySpeed: 2000 // Set autoplay speed in milliseconds
+            });
+        });
+    </script>
 
 </body>
 

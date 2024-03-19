@@ -1,7 +1,7 @@
 /* taken from mary lou's block reveal effect demo */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 body{
-    background:#f0f0f0;
+    background:#d6d3d3;
     font-family: 'Ubuntu', sans-serif;
 }
 #rfx4
@@ -179,7 +179,24 @@ body{
 	-ms-transform: translate(0,0);
 	-o-transform: translate(0,0);
 }
+    /* Custom CSS for the slider */
+    .slider {
+        width: 80%; /* Adjust the width of the slider */
+        margin: 0 auto;
+		padding-top: 50px;;
+    }
 
+    .slider img {
+		max-width: 30%; /* Make images responsive */
+		height: auto;
+    }
+
+    .slider .slide {
+		
+		margin: 0 auto; /* Center the image */
+	}
+
+	
 @media screen and (max-width: 50em) {
 	
 	.content--full {
@@ -220,4 +237,5 @@ body{
 	.dual {
 		margin-top: 0;
 	}
+	
 }
