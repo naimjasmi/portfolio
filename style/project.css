@@ -15,7 +15,6 @@ h1 {
     margin: 0;
     font-size: 32px;
 }
-
 .container {
     width: 80%;
     margin: 20px auto;
@@ -35,7 +34,7 @@ p {
 }
 .project-card {
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -44,18 +43,35 @@ p {
     height: 100%;
 }
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 .project-card-content {
     padding: 20px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+.project-card-content img {
+    width: 300px;
+    padding: 10px;
+    height: auto;
+    margin-bottom: 10px; /* Add margin to separate the image from text */
+    
 }
 .project h3 {
-    margin-bottom: 5px;
-}
-.project p {
-    margin-top: 5px;
+    margin-bottom: 10px; /* Increase margin between project titles */
 }
 .sidebar {
     display: none;
 }
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #fff; /* Adding a line to the top of the footer */
+}
+
+
